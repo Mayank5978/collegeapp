@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:iss_period="1000"
+                app:iss_corner_radius="10"
+                app:iss_auto_cycle="true"
+                app:iss_delay="1000"
+                app:iss_title_background="@drawable/gradient"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/latobold"
+                android:text="ACET"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Aligarh College of Engineering and Technology was established by the Jawahar Vidyalaya Society in the year 2001 with the main objective of providing quality education in the field of Engineering and Technology to fulfill the aspirations of young and aspiring students of not only Aligarh region but across the length and breadth of India. The vision of the management is to provide such facilities in a college with high quality professional education, so that the students can develop capabilities to achieve a rewarding career in life. The college is situated at 3.0 Km from Aligarh city on the Aligarh – Mathura Road. It is well – connected from all parts of the country through Aligarh Railway Jn. of North-Central Railway located on Delhi – Howrah main line. It embodies the mission of providing education in professional fields through student centric experimental learning and providing national and international exposure by conducting seminars and workshops. The college has the latest audio-visual facilities with a state-of-theart Computer Centre, advanced multimedia training methodology etc. The students get full opportunity to develop their personality and communication skills through extra-curricular and co-curricular activities, like educational clubs, cultural societies and student
+councils."
+                android:layout_marginTop="@dimen/txt_margin"
+                android:layout_marginHorizontal="@dimen/txt_margin"
+                android:textSize="@dimen/txt_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/light"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@color/darkColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="36dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departments"
+                        android:layout_marginTop="@dimen/txt_margin"
+                        android:textSize="@dimen/title_size"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#fff"
+                        android:fontFamily="@string/bold"/>
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#fff"
+                            android:orientation="vertical">
+                           <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="computer science"
+                            android:layout_marginTop="@dimen/txt_margin"
+                            android:layout_marginHorizontal="@dimen/txt_margin"
+                            android:textSize="@dimen/txt_size"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/textColor"
+                               android:layout_margin="8dp"
+                            android:fontFamily="@string/light"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="computer science"
+                                android:layout_marginTop="@dimen/txt_margin"
+                                android:layout_marginHorizontal="@dimen/txt_margin"
+                                android:textSize="@dimen/txt_size"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/textColor"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@string/light"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/grey"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="computer science"
+                                android:layout_marginTop="@dimen/txt_margin"
+                                android:layout_marginHorizontal="@dimen/txt_margin"
+                                android:textSize="@dimen/txt_size"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/textColor"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@string/light"/>
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/txt_margin">
+                android:fontFamily="@string/bold"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Details"
+                    android:layout_marginTop="36dp"
+                    android:textSize="@dimen/title_size"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:layout_marginTop="@dimen/txt_margin"
+                    android:layout_marginHorizontal="@dimen/txt_margin"
+                    android:textSize="@dimen/txt_size"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/light"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 KM From, Mathura Bypass Rd, Sasni Gate, Aligarh, Uttar Pradesh 202001"
+                    android:layout_marginTop="@dimen/txt_margin"
+                    android:layout_marginHorizontal="@dimen/txt_margin"
+                    android:textSize="@dimen/txt_size"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/textColor"
+                    android:fontFamily="@string/light"/>
+
+
+                <ImageView
+                    android:id="@+id/map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:src="@drawable/map"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</FrameLayout>

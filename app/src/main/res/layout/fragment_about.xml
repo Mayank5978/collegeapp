@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.about.AboutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:id="@+id/college_image"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Aligarh College of Engineering and Technology was established by the Jawahar Vidyalaya Society in the year 2001 with the main objective of providing quality education in the field of Engineering and Technology to fulfill the aspirations of young and aspiring students of not only Aligarh region but across the length and breadth of India. The vision of the management is to provide such facilities in a college with high quality professional education, so that the students can develop capabilities to achieve a rewarding career in life. The college is situated at 3.0 Km from Aligarh city on the Aligarh – Mathura Road. It is well – connected from all parts of the country through Aligarh Railway Jn. of North-Central Railway located on Delhi – Howrah main line. It embodies the mission of providing education in professional fields through student centric experimental learning and providing national and international exposure by conducting seminars and workshops. The college has the latest audio-visual facilities with a state-of-theart Computer Centre, advanced multimedia training methodology etc. The students get full opportunity to develop their personality and communication skills through extra-curricular and co-curricular activities, like educational clubs, cultural societies and student
+councils."
+            android:layout_marginTop="@dimen/txt_margin"
+            android:layout_marginHorizontal="@dimen/txt_margin"
+            android:textSize="@dimen/txt_size"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:fontFamily="@string/light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/txt_margin">
+            android:fontFamily="@string/bold"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Details"
+                android:layout_marginTop="36dp"
+                android:textSize="@dimen/title_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginTop="@dimen/txt_margin"
+                android:layout_marginHorizontal="@dimen/txt_margin"
+                android:textSize="@dimen/txt_size"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 KM From, Mathura Bypass Rd, Sasni Gate, Aligarh, Uttar Pradesh 202001"
+                android:layout_marginTop="@dimen/txt_margin"
+                android:layout_marginHorizontal="@dimen/txt_margin"
+                android:textSize="@dimen/txt_size"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textColor"
+                android:fontFamily="@string/light"/>
+
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="230dp"
+                android:src="@drawable/map"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/txt_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_label"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/txt_margin"
+                android:text="Green view environment"/>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="36dp"
+            android:fontFamily="@font/latobold"
+            android:text="Branch"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/title_size" />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="@dimen/txt_margin"
+            android:foregroundGravity="center"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:id="@+id/viewPager"/>
+
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
